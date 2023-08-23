@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Define the base URL of your Flask app
-FLASK_APP_BASE_URL = "https://tidb-hackathon.vercel.app/"  # Replace with your Flask app's URL
+FLASK_APP_BASE_URL = "https://eco-lens.vercel.app/"  # Replace with your Flask app's URL
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>', methods=['GET', 'POST', 'PUT', 'DELETE'])
