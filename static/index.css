@@ -1,0 +1,224 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --primary: #00C372;
+    --secondary: black;
+    --tertiary: white;
+
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+    border: 1px soli red;
+}
+
+.header {
+    border-bottom: #a3a3a3 1px solid;
+    z-index: 10;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    margin: 0;
+}
+
+.logo_div {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-left: 35px;
+}
+
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+#brand_name {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--secondary);
+    letter-spacing: 3px;
+}
+
+.links {
+    display: flex;
+    width: 100vh;
+    justify-content: space-around;
+}
+
+.first_div{
+    height: 91.9vh;   
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.prompt_bar_div {
+    flex: 3;
+    margin: 0;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F6F6;
+    /* Add some padding for spacing inside the prompt_bar_div if necessary */
+}
+
+.prompt_div_details{
+    display: flex;
+    margin: 11% 0px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#prompt_desc{
+    font-size: xx-large;
+    color: var(--secondary);
+    font-weight: bolder;
+    text-align: center;
+    width: 90%;
+}
+
+span{
+    color: var(--primary);
+    
+    letter-spacing: 3px;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #6F7588;
+    font-weight: 500;
+}
+
+.links > a:hover{
+    color: var(--primary);
+
+    transition: .3s;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+/* Custom styles for the input element */
+#prompt_input {
+    font-family: 'Poppins';
+    font-size: 15px; 
+    padding-left: 13px;/* Adjust the font size as needed */
+    width: 60%;
+    height: 40px; /* Add padding to provide spacing around the text */
+    border: 2px solid var(--primary);
+ /* Add a border with a custom color */
+    border-radius: 8px; /* Add rounded corners to the input */
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+/* Optional: Style the input when it's focused */
+#prompt_input:focus {
+    border-color: #4285f4; /* Change the border color when focused */
+}
+
+.tags{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.tags > div{
+    border: 1px solid #6F7588;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tags > div:hover{
+    border: 1px solid var(--primary);
+
+}
+*{
+    border: 1px  red;
+}
+
+.switch {
+    --secondary-container: #3a4b39;
+
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.2em;
+    height: 1.4em;
+   }
+   
+   .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+   }
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tertiary);
+    border: #00C372 1px solid;
+    transition: .2s;
+    border-radius: 30px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.17em;
+    background-color: var(--primary);
+
+    transition: .4s;
+   }
+   
+   input:checked + .slider::before {
+    background-color: var(--secondary-container);
+   }
+   
+   input:checked + .slider {
+    background-color: var(--primary);
+   }
+   
+   input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary);
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(1.5em);
+   }
+
+
+
+#video_div{
+    width: 70vw;
+    flex: 2;
+    border: #00C372 3px solid; 
+}
