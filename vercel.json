@@ -1,9 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "http://localhost:5500/api/:1"
-      }
-    ]
-  }
-  
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "http://localhost:5500/api/:splat"
+    }
+  ]
+}
