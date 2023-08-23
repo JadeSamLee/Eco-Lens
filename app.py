@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('')
 def index():
     message = "This message comes from Python!"
     return render_template('index.html', message=message)
