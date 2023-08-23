@@ -1,8 +1,6 @@
 {
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "http://localhost:5500/api/:splat"
-    }
+    { "source": "/api/:path*", "destination": "/serverless/forward-proxy.js" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
